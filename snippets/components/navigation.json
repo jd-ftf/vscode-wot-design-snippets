@@ -1,0 +1,9 @@
+{
+  "wd-cell": {
+    "prefix": "wd-cell",
+    "body": [
+      "<wd-cell />"
+    ],
+    "description": "wd-cell"
+  }
+}

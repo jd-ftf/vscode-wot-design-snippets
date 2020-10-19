@@ -1,0 +1,7 @@
+node_modules
+.vscode/**
+.vscode-test/**
+.gitignore
+README_TEMPLATE.md
+README_CONFIG.js
+package-lock.json

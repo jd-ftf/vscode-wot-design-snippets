@@ -1,0 +1,69 @@
+{
+	"name": "wot-design-snippets",
+	"displayName": "Wot Design Snippets",
+	"author": "vaniship",
+	"publisher": "vaniship",
+	"icon": "asset/wot-design.png",
+	"description": "A Vue Snippets Extension",
+	"license": "MIT",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.5.0"
+	},
+	"keywords": [
+		"javascript",
+		"snippet",
+		"wot-design",
+		"wot design"
+	],
+	"scripts": {
+		"build": "vsce package",
+		"gen-readme": "vscode-snippets-doc-maker"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jd-ftf/wot-design/vscode-wot-design-snippets"
+	},
+	"bugs": {
+		"url": "https://github.com/jd-ftf/wot-design/vscode-wot-design-snippets/issues",
+		"email": "vaniship@gmail.com"
+	},
+	"contributes": {
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./snippets/components/imports.json"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/components/imports.json"
+			},
+			{
+				"language": "vue-html",
+				"path": "./snippets/components/basic.json"
+			},
+			{
+				"language": "vue-html",
+				"path": "./snippets/components/navigation.json"
+			},
+			{
+				"language": "vue-html",
+				"path": "./snippets/components/form.json"
+			},
+			{
+				"language": "vue-html",
+				"path": "./snippets/components/interaction.json"
+			},
+			{
+				"language": "vue-html",
+				"path": "./snippets/components/display.json"
+			}
+		]
+	},
+	"dependencies": {
+		"vscode-snippets-doc-maker": "0.0.2"
+	}
+}

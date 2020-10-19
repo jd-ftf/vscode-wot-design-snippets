@@ -1,0 +1,9 @@
+{
+  "wd-action-sheet": {
+    "prefix": "wd-action-sheet",
+    "body": [
+      "<wd-action-sheet />"
+    ],
+    "description": "wd-action-sheet"
+  }
+}

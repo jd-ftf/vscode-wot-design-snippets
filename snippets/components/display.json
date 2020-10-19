@@ -1,0 +1,9 @@
+{
+  "wd-card": {
+    "prefix": "wd-card",
+    "body": [
+      "<wd-card />"
+    ],
+    "description": "wd-card"
+  }
+}

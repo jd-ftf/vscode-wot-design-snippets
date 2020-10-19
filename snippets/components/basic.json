@@ -1,0 +1,126 @@
+{
+  "wd-badge with type": {
+    "prefix": "wd-badge with type",
+    "body": [
+      "<wd-badge :value=\"${1:value}\" :max=\"${2:99}\" type=\"${3|primary,warning,success,danger,info|}\">",
+      "\t${TM_SELECTED_TEXT:${4:<wd-button size=\"small\">评论</wd-button>}}",
+      "</wd-badge>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/badge#attributes"
+  },
+  "wd-badge with bg-color": {
+    "prefix": "wd-badge with bg-color",
+    "body": [
+      "<wd-badge :value=\"${1:value}\" :max=\"${2:99}\" bg-color=\"${3:pink}\">",
+      "\t${TM_SELECTED_TEXT:${4:<wd-button size=\"small\">回复</wd-button>}}",
+      "</wd-badge>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/badge#attributes"
+  },
+  "wd-badge use dot": {
+    "prefix": "wd-badge use dot",
+    "body": [
+      "<wd-badge is-dot>",
+      "\t${TM_SELECTED_TEXT:${1:<wd-button size=\"small\">数据查询</wd-button>}}",
+      "</wd-badge>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/badge#attributes"
+  },
+
+  "wd-button": {
+    "prefix": "wd-button",
+    "body": [
+      "<wd-button type=\"${1|primary,success,info,warning,error,text,icon|}\" size=\"${2|small,medium,large|}\">",
+      "\t${TM_SELECTED_TEXT:${3:按钮文字}}",
+      "</wd-button>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/button#attributes"
+  },
+  "wd-button disabled": {
+    "prefix": "wd-button disabled",
+    "body": [
+      "<wd-button disabled>${TM_SELECTED_TEXT:${1:按钮文字}}</wd-button>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/button#attributes"
+  },
+  "wd-button plain": {
+    "prefix": "wd-button plain",
+    "body": [
+      "<wd-button plain>",
+      "\t${TM_SELECTED_TEXT:${1:幽灵按钮}}",
+      "</wd-button>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/button#attributes"
+  },
+  "wd-button loading": {
+    "prefix": "wd-button loading",
+    "body": [
+      "<wd-button loading>",
+      "\t${TM_SELECTED_TEXT:${1:加载中}}",
+      "</wd-button>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/button#attributes"
+  },
+  "wd-button text": {
+    "prefix": "wd-button text",
+    "body": [
+      "<wd-button type=\"text\">${TM_SELECTED_TEXT:${1:按钮文字}}</wd-button>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/button#attributes"
+  },
+  "wd-button icon": {
+    "prefix": "wd-button icon",
+    "body": [
+      "<wd-button icon=\"${1|arrow-thin-up,arrow-thin-down,arrow-right,arrow-down,arrow-up,arrow-left,fill-camera,clock,computer,eye-close,view,translate,download,picture,evaluation,goods,lenovo,list,note,video,warning,setting,camera,chat,delete-thin,add-circle,add,scan,translate-bold,close,search,delete,more,thin-arrow-left,filter,phone,refresh,check,phone-compute,transfer,keywords,star-on,check-bold,error-fill,warn-bold,close-outline,close-bold,check-outline,wifi-error,subscribe,detection,read,fill-arrow-down,dong,edit-outline,copy,bags,decrease,jdm,spool|}\">${2:按钮文字}</wd-button>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/button#attributes\nhttps://ftf.jd.com/wot-design/#/components/icon"
+  },
+  "wd-button block": {
+    "prefix": "wd-button block",
+    "body": [
+      "<wd-button block>${1:块状按钮}</wd-button>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/button#attributes"
+  },
+
+  "wd-icon": {
+    "prefix": "wd-icon",
+    "body": [
+      "<wd-icon size=\"${1:20px}\" color=\"${2:#0083ff}\" name=\"${3|arrow-thin-up,arrow-thin-down,arrow-right,arrow-down,arrow-up,arrow-left,fill-camera,clock,computer,eye-close,view,translate,download,picture,evaluation,goods,lenovo,list,note,video,warning,setting,camera,chat,delete-thin,add-circle,add,scan,translate-bold,close,search,delete,more,thin-arrow-left,filter,phone,refresh,check,phone-compute,transfer,keywords,star-on,check-bold,error-fill,warn-bold,close-outline,close-bold,check-outline,wifi-error,subscribe,detection,read,fill-arrow-down,dong,edit-outline,copy,bags,decrease,jdm,spool|}\">${2:按钮文字}</wd-icon>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/icon#attributes"
+  },
+  "wd-icon with tag": {
+    "prefix": "wd-icon with tag",
+    "body": [
+      "<wd-icon size=\"${1:20px}\" color=\"${2:#0083ff}\" tag=\"${3:div}\" name=\"${4|arrow-thin-up,arrow-thin-down,arrow-right,arrow-down,arrow-up,arrow-left,fill-camera,clock,computer,eye-close,view,translate,download,picture,evaluation,goods,lenovo,list,note,video,warning,setting,camera,chat,delete-thin,add-circle,add,scan,translate-bold,close,search,delete,more,thin-arrow-left,filter,phone,refresh,check,phone-compute,transfer,keywords,star-on,check-bold,error-fill,warn-bold,close-outline,close-bold,check-outline,wifi-error,subscribe,detection,read,fill-arrow-down,dong,edit-outline,copy,bags,decrease,jdm,spool|}\">${2:按钮文字}</wd-icon>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/icon#attributes"
+  },
+  "wd-icon i": {
+    "prefix": "wd-icon i",
+    "body": [
+      "<i class=\"${4|arrow-thin-up,arrow-thin-down,arrow-right,arrow-down,arrow-up,arrow-left,fill-camera,clock,computer,eye-close,view,translate,download,picture,evaluation,goods,lenovo,list,note,video,warning,setting,camera,chat,delete-thin,add-circle,add,scan,translate-bold,close,search,delete,more,thin-arrow-left,filter,phone,refresh,check,phone-compute,transfer,keywords,star-on,check-bold,error-fill,warn-bold,close-outline,close-bold,check-outline,wifi-error,subscribe,detection,read,fill-arrow-down,dong,edit-outline,copy,bags,decrease,jdm,spool|}\">${2:按钮文字}</i>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/icon#attributes"
+  },
+
+  "wd-popup basic": {
+    "prefix": "wd-popup basic",
+    "body": [
+      "<wd-popup v-model=\"${1:show}\" :style=\"{ 'padding': '${2:30px} ${3:40px}' }\">",
+      "\t${TM_SELECTED_TEXT:${4:内容}}",
+      "</wd-popup>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/popup#attributes"
+  },
+  "wd-popup position": {
+    "prefix": "wd-popup position",
+    "body": [
+      "<wd-popup v-model=\"${1:show}\" position=\"${2|top,right,bottom,left|}\" :style=\"{ 'height': '${3:200px}' }\" ${4:closable}>",
+      "\t${TM_SELECTED_TEXT:${5:内容}}",
+      "</wd-popup>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/popup#attributes"
+  }
+}

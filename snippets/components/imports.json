@@ -1,0 +1,30 @@
+{
+  "wd-badge": {
+    "prefix": "wd-badge",
+    "body": [
+      "import { Badge } from 'wot-design'",
+      "Vue.use(Badge)"
+    ]
+  },
+  "wd-button": {
+    "prefix": "wd-button",
+    "body": [
+      "import { Button } from 'wot-design'",
+      "Vue.use(Button)"
+    ]
+  },
+  "wd-icon": {
+    "prefix": "wd-icon",
+    "body": [
+      "import { Icon } from 'wot-design'",
+      "Vue.use(Icon)"
+    ]
+  },
+  "wd-popup": {
+    "prefix": "wd-popup",
+    "body": [
+      "import { Popup } from 'wot-design'",
+      "Vue.use(Popup)"
+    ]
+  }
+}

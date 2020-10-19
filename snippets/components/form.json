@@ -1,0 +1,9 @@
+{
+  "wd-checkbox": {
+    "prefix": "wd-checkbox",
+    "body": [
+      "<wd-checkbox />"
+    ],
+    "description": "wd-checkbox"
+  }
+}
