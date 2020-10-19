@@ -1,8 +1,8 @@
 {
 	"name": "wot-design-snippets",
 	"displayName": "Wot Design Snippets",
-	"author": "vaniship",
-	"publisher": "vaniship",
+	"author": "ftf@jd.com",
+	"publisher": "ftf",
 	"icon": "asset/wot-design.png",
 	"description": "A Vue Snippets Extension",
 	"license": "MIT",
@@ -25,10 +25,10 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/jd-ftf/wot-design/vscode-wot-design-snippets"
+		"url": "https://github.com/jd-ftf/vscode-wot-design-snippets"
 	},
 	"bugs": {
-		"url": "https://github.com/jd-ftf/wot-design/vscode-wot-design-snippets/issues",
+		"url": "https://github.com/jd-ftf/vscode-wot-design-snippets/issues",
 		"email": "vaniship@gmail.com"
 	},
 	"contributes": {
