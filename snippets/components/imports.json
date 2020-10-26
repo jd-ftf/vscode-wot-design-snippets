@@ -26,5 +26,125 @@
       "import { Popup } from 'wot-design'",
       "Vue.use(Popup)"
     ]
+  },
+  "wd-card": {
+    "prefix": "wd-card",
+    "body": [
+      "import { Card } from 'wot-design'",
+      "Vue.use(Card)"
+    ]
+  },
+  "wd-collapse": {
+    "prefix": "wd-collapse",
+    "body": [
+      "import { Collapse, CollapseItem } from 'wot-design'",
+      "Vue.use(Collapse)",
+      "Vue.use(CollapseItem)"
+    ]
+  },
+  "wd-curtain": {
+    "prefix": "wd-curtain",
+    "body": [
+      "import { Curtain } from 'wot-design'",
+      "Vue.use(Curtain)"
+    ]
+  },
+  "wd-divider": {
+    "prefix": "wd-divider",
+    "body": [
+      "import { Divider } from 'wot-design'",
+      "Vue.use(Divider)"
+    ]
+  },
+  "wd-img": {
+    "prefix": "wd-img",
+    "body": [
+      "import { Img } from 'wot-design'",
+      "Vue.use(Img)"
+    ]
+  },
+  "wd-img-preview": {
+    "prefix": "wd-img-preview",
+    "body": [
+      "import { ImagePreview } from 'wot-design'",
+      "Vue.use(ImagePreview)"
+    ]
+  },
+  "wd-img-preview $preview": {
+    "prefix": "$preview",
+    "body": [
+      "this.$preview({urls: ${1:[]}})"
+    ]
+  },
+  "Lazyload": {
+    "prefix": "Lazyload",
+    "body": [
+      "import { Lazyload } from 'wot-design'",
+      "Vue.use(Lazyload)"
+    ]
+  },
+  "wd-notice-bar": {
+    "prefix": "wd-notice-bar",
+    "body": [
+      "import { NoticeBar } from 'wot-design'",
+      "Vue.use(NoticeBar)"
+    ]
+  },
+  "wd-popover": {
+    "prefix": "wd-popover",
+    "body": [
+      "import { Popover } from 'wot-design'",
+      "Vue.use(Popover)"
+    ]
+  },
+  "wd-progress": {
+    "prefix": "wd-progress",
+    "body": [
+      "import { Progress } from 'wot-design'",
+      "Vue.use(Progress)"
+    ]
+  },
+  "wd-status-tip": {
+    "prefix": "wd-status-tip",
+    "body": [
+      "import { StatusTip } from 'wot-design'",
+      "Vue.use(StatusTip)"
+    ]
+  },
+  "wd-sort-button": {
+    "prefix": "wd-sort-button",
+    "body": [
+      "import { SortButton } from 'wot-design'",
+      "Vue.use(SortButton)"
+    ]
+  },
+  "wd-steps": {
+    "prefix": "wd-steps",
+    "body": [
+      "import { Step, Steps } from 'wot-design'",
+      "Vue.use(Step)",
+      "Vue.use(Steps)"
+    ]
+  },
+  "Sticky": {
+    "prefix": "Sticky",
+    "body": [
+      "import { Sticky } from 'wot-design'",
+      "Vue.use(Sticky)"
+    ]
+  },
+  "wd-tag": {
+    "prefix": "wd-tag",
+    "body": [
+      "import { Tag } from 'wot-design'",
+      "Vue.use(Tag)"
+    ]
+  },
+  "wd-tooltip": {
+    "prefix": "wd-tooltip",
+    "body": [
+      "import { Tooltip } from 'wot-design'",
+      "Vue.use(Tooltip)"
+    ]
   }
 }
