@@ -2,8 +2,429 @@
   "wd-card": {
     "prefix": "wd-card",
     "body": [
-      "<wd-card />"
+      "<wd-card title=\"${1:卡片标题}\">",
+      "\t${TM_SELECTED_TEXT:${2:卡片内容}}",
+      "</wd-card>"
     ],
-    "description": "wd-card"
+    "description": "https://ftf.jd.com/wot-design/#/components/card"
+  },
+  "wd-card rectangle": {
+    "prefix": "wd-card rectangle",
+    "body": [
+      "<wd-card type=\"rectangle\">",
+      "\t${TM_SELECTED_TEXT:${1:卡片内容}}",
+      "</wd-card>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/card"
+  },
+  "wd-collapse": {
+    "prefix": "wd-collapse",
+    "body": [
+      "<wd-collapse v-model=\"${1:value}\">",
+      "\t<wd-collapse-item title=\"${2:折叠栏的标题}\" name=\"${3:折叠栏的标识符}\">",
+      "\t\t${TM_SELECTED_TEXT:${4:折叠栏内容}}",
+      "\t</wd-collapse-item>",
+      "</wd-collapse>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/collapse"
+  },
+  "wd-collapse accordion": {
+    "prefix": "wd-collapse accordion",
+    "body": [
+      "<wd-collapse v-model=\"${1:value}\" accordion>",
+      "\t<wd-collapse-item title=\"${2:折叠栏的标题}\" name=\"${3:折叠栏的标识符}\">",
+      "\t\t${TM_SELECTED_TEXT:${4:折叠栏内容}}",
+      "\t</wd-collapse-item>",
+      "</wd-collapse>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/collapse"
+  },
+  "wd-collapse disabled": {
+    "prefix": "wd-collapse disabled",
+    "body": [
+      "<wd-collapse v-model=\"${1:value}\">",
+      "\t<wd-collapse-item title=\"${2:折叠栏的标题}\" name=\"${3:折叠栏的标识符}\" disabled>",
+      "\t\t${TM_SELECTED_TEXT:${4:折叠栏内容}}",
+      "\t</wd-collapse-item>",
+      "</wd-collapse>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/collapse"
+  },
+  "wd-collapse viewmore": {
+    "prefix": "wd-collapse viewmore",
+    "body": [
+      "<wd-collapse viewmore v-model=\"${1:value}\">",
+      "\t${TM_SELECTED_TEXT:${2:折叠栏内容}}",
+      "</wd-collapse>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/collapse"
+  },
+  "wd-curtain": {
+    "prefix": "wd-curtain",
+    "body": [
+      "<wd-curtain v-model=\"${1:true}\" src=\"${2}\" to=\"${3}\"></wd-curtain>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/curtain"
+  },
+  "wd-curtain width": {
+    "prefix": "wd-curtain width",
+    "body": [
+      "<wd-curtain v-model=\"${1:true}\" src=\"${2}\" to=\"${3}\" width=\"${4:280px}\"></wd-curtain>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/curtain"
+  },
+  "wd-curtain close-position": {
+    "prefix": "wd-curtain close-position",
+    "body": [
+      "<wd-curtain v-model=\"${1:true}\" src=\"${2}\" to=\"${3}\" close-position=\"${4|inset, top, bottom, bottom, top-left, top-right, bottom-left, bottom-right|}\"></wd-curtain>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/curtain"
+  },
+  "wd-curtain close-on-click-modal": {
+    "prefix": "wd-curtain close-on-click-modal",
+    "body": [
+      "<wd-curtain v-model=\"${1:true}\" src=\"${2}\" to=\"${3}\" close-position=\"${4|true, false|}\"></wd-curtain>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/curtain"
+  },
+  "wd-divider": {
+    "prefix": "wd-divider",
+    "body": [
+      "<wd-divider></wd-divider>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/divider"
+  },
+  "wd-img": {
+    "prefix": "wd-img",
+    "body": [
+      "<wd-img width=\"${1:100}\" height=\"${2:100}\" src=\"${3}\"/>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/img"
+  },
+  "wd-img fit": {
+    "prefix": "wd-img fit",
+    "body": [
+      "<wd-img width=\"${1:100}\" height=\"${2:100}\" src=\"${3}\" fit=\"${4|contain, cover, fill, none, scale-down|}\"/>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/img"
+  },
+  "wd-img round": {
+    "prefix": "wd-img round",
+    "body": [
+      "<wd-img width=\"${1:100}\" height=\"${2:100}\" src=\"${3}\" round/>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/img"
+  },
+  "wd-img lazy": {
+    "prefix": "wd-img lazy",
+    "body": [
+      "<wd-img v-lazy=\"${1}\"/>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/img"
+  },
+  "wd-img-preview": {
+    "prefix": "wd-img-preview",
+    "body": [
+      "<wd-img-preview v-model=\"${1:true}\" :urls=\"${2}\" @open=\"${3}\" @close=\"${4}\" :on-long-tap=\"${5}\" ></wd-img-preview>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/imgPreview"
+  },
+  "wd-notice-bar": {
+    "prefix": "wd-notice-bar",
+    "body": [
+      "<wd-notice-bar text=\"${TM_SELECTED_TEXT:${1:提示消息内容}}\" prefix=\"${2|arrow-thin-up,arrow-thin-down,arrow-right,arrow-down,arrow-up,arrow-left,fill-camera,clock,computer,eye-close,view,translate,download,picture,evaluation,goods,lenovo,list,note,video,warning,setting,camera,chat,delete-thin,add-circle,add,scan,translate-bold,close,search,delete,more,thin-arrow-left,filter,phone,refresh,check,phone-compute,transfer,keywords,star-on,check-bold,error-fill,warn-bold,close-outline,close-bold,check-outline,wifi-error,subscribe,detection,read,fill-arrow-down,dong,edit-outline,copy,bags,decrease,jdm,spool|}\" ></wd-notice-bar>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/noticeBar"
+  },
+  "wd-notice-bar type": {
+    "prefix": "wd-notice-bar type",
+    "body": [
+      "<wd-notice-bar text=\"${TM_SELECTED_TEXT:${1:提示消息内容}}\" prefix=\"${2|arrow-thin-up,arrow-thin-down,arrow-right,arrow-down,arrow-up,arrow-left,fill-camera,clock,computer,eye-close,view,translate,download,picture,evaluation,goods,lenovo,list,note,video,warning,setting,camera,chat,delete-thin,add-circle,add,scan,translate-bold,close,search,delete,more,thin-arrow-left,filter,phone,refresh,check,phone-compute,transfer,keywords,star-on,check-bold,error-fill,warn-bold,close-outline,close-bold,check-outline,wifi-error,subscribe,detection,read,fill-arrow-down,dong,edit-outline,copy,bags,decrease,jdm,spool|}\" type=\"${3|info, warning, danger|}\"></wd-notice-bar>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/noticeBar"
+  },
+  "wd-notice-bar scrollable": {
+    "prefix": "wd-notice-bar scrollable",
+    "body": [
+      "<wd-notice-bar text=\"${TM_SELECTED_TEXT:${1:提示消息内容}}\" :scrollable=\"${2|false,true|}\"></wd-notice-bar>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/noticeBar"
+  },
+  "wd-notice-bar slot": {
+    "prefix": "wd-notice-bar slot",
+    "body": [
+      "<wd-notice-bar>",
+      "\t<div slot=\"prefix\">${1:前置插槽}</div>",
+      "\t${2:提示消息内容}",
+      "\t<div slot=\"suffix\">${3:后置插槽}</div>",
+      "</wd-notice-bar>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/noticeBar"
+  },
+  "wd-notice-bar closable": {
+    "prefix": "wd-notice-bar closable",
+    "body": [
+      "<wd-notice-bar text=\"${TM_SELECTED_TEXT:${1:提示消息内容}}\" closable></wd-notice-bar>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/noticeBar"
+  },
+  "wd-notice-bar color": {
+    "prefix": "wd-notice-bar color",
+    "body": [
+      "<wd-notice-bar text=\"${TM_SELECTED_TEXT:${1:提示消息内容}}\" color=\"${1:#34D19D}\" background-color=\"${1:#f0f9eb}\" ></wd-notice-bar>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/noticeBar"
+  },
+  "wd-popover": {
+    "prefix": "wd-popover",
+    "body": [
+      "<wd-popover content=\"${TM_SELECTED_TEXT:${1:气泡消息内容}}\">",
+      "\t<wd-button>${2:点击展示}</wd-button>",
+      "</wd-popover>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/popover"
+  },
+  "wd-popover mode": {
+    "prefix": "wd-popover mode",
+    "body": [
+      "<wd-popover mode=\"${1|normal, menu|}\" :content=\"${2}\" @menu-click=\"${3}\">",
+      "\t<wd-button>${4:点击展示}</wd-button>",
+      "</wd-popover>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/popover"
+  },
+  "wd-progress": {
+    "prefix": "wd-progress",
+    "body": [
+      "<wd-progress :percentage=\"${1:30}\"></wd-progress>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/progress"
+  },
+  "wd-progress hide-text": {
+    "prefix": "wd-progress hide-text",
+    "body": [
+      "<wd-progress :percentage=\"${1:30}\" hide-text></wd-progress>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/progress"
+  },
+  "wd-progress status": {
+    "prefix": "wd-progress status",
+    "body": [
+      "<wd-progress :percentage=\"${1:30}\" hide-text status=\"${2|success,danger|}\"></wd-progress>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/progress"
+  },
+  "wd-progress color": {
+    "prefix": "wd-progress color",
+    "body": [
+      "<wd-progress :percentage=\"${1:30}\" color=\"${2:#00c740}\"></wd-progress>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/progress"
+  },
+  "wd-status-tip": {
+    "prefix": "wd-status-tip",
+    "body": [
+      "<wd-status-tip type=\"${1|search, network, content, collect, comment, halo, message|}\" tip=\"${TM_SELECTED_TEXT:${2:提示文案}}\"/>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/statusTip"
+  },
+  "wd-sort-button": {
+    "prefix": "wd-sort-button",
+    "body": [
+      "<wd-sort-button v-model=\"${1:value}\" title=\"${2:排序按钮展示文案}\"/>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/sortButton"
+  },
+  "wd-sort-button allow-reset": {
+    "prefix": "wd-sort-button allow-reset",
+    "body": [
+      "<wd-sort-button v-model=\"${1:value}\" title=\"${2:排序按钮展示文案}\" allow-reset/>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/sortButton"
+  },
+  "wd-sort-button desc-first": {
+    "prefix": "wd-sort-button desc-first",
+    "body": [
+      "<wd-sort-button v-model=\"${1:value}\" title=\"${2:排序按钮展示文案}\" desc-first/>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/sortButton"
+  },
+  "wd-steps": {
+    "prefix": "wd-steps",
+    "body": [
+      "<wd-steps :active=\"${1:0}\">",
+      "\t<wd-step></wd-step>",
+      "\t<wd-step></wd-step>",
+      "\t<wd-step></wd-step>",
+      "</wd-steps>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/steps"
+  },
+  "wd-steps align-center": {
+    "prefix": "wd-steps align-center",
+    "body": [
+      "<wd-steps :active=\"${1:0}\" align-center>",
+      "\t<wd-step></wd-step>",
+      "\t<wd-step></wd-step>",
+      "\t<wd-step></wd-step>",
+      "</wd-steps>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/steps"
+  },
+  "wd-steps title description": {
+    "prefix": "wd-steps title description",
+    "body": [
+      "<wd-steps :active=\"${1:0}\" align-center>",
+      "\t<wd-step title=\"${2:步骤标题}\" description=\"${3:描述信息}\"></wd-step>",
+      "</wd-steps>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/steps"
+  },
+  "wd-steps icon": {
+    "prefix": "wd-steps icon",
+    "body": [
+      "<wd-steps :active=\"${1:0}\" align-center>",
+      "\t<wd-step icon=\"wd-icon-${2|arrow-thin-up,arrow-thin-down,arrow-right,arrow-down,arrow-up,arrow-left,fill-camera,clock,computer,eye-close,view,translate,download,picture,evaluation,goods,lenovo,list,note,video,warning,setting,camera,chat,delete-thin,add-circle,add,scan,translate-bold,close,search,delete,more,thin-arrow-left,filter,phone,refresh,check,phone-compute,transfer,keywords,star-on,check-bold,error-fill,warn-bold,close-outline,close-bold,check-outline,wifi-error,subscribe,detection,read,fill-arrow-down,dong,edit-outline,copy,bags,decrease,jdm,spool|}\" type=\"${3|info, warning, danger|}}\"></wd-step>",
+      "</wd-steps>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/steps"
+  },
+  "wd-steps vertical": {
+    "prefix": "wd-steps vertical",
+    "body": [
+      "<wd-steps :active=\"${1:0}\" vertical>",
+      "\t<wd-step description=\"${2:描述信息}\"></wd-step>",
+      "</wd-steps>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/steps"
+  },
+  "wd-steps dot": {
+    "prefix": "wd-steps dot",
+    "body": [
+      "<wd-steps :active=\"${1:0}\" align-center dot>",
+      "\t<wd-step description=\"${2:描述信息}\"></wd-step>",
+      "</wd-steps>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/steps"
+  },
+  "wd-steps status": {
+    "prefix": "wd-steps status",
+    "body": [
+      "<wd-steps :active=\"${1:0}\" align-center>",
+      "\t<wd-step title=\"${2:步骤标题}\" status=\"${3|finished, process, error|}\"></wd-step>",
+      "</wd-steps>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/steps"
+  },
+  "Sticky": {
+    "prefix": "Sticky",
+    "body": [
+      "<Sticky>",
+      "\t<p>${TM_SELECTED_TEXT:${1:内容}}</p>",
+      "</Sticky>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/sticky"
+  },
+  "Sticky offset-top": {
+    "prefix": "Sticky offset-top", 
+    "body": [
+      "<Sticky :offset-top=\"${1:44}\">",
+      "\t<p>${TM_SELECTED_TEXT:${2:内容}}</p>",
+      "</Sticky>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/sticky"
+  },
+  "wd-tag": {
+    "prefix": "wd-tag", 
+    "body": [
+      "<wd-tag>${TM_SELECTED_TEXT:${1:标签内容}}</wd-tag>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/tag"
+  },
+  "wd-tag type": {
+    "prefix": "wd-tag type", 
+    "body": [
+      "<wd-tag type=\"${1|primary, danger, warning, success|}\">${TM_SELECTED_TEXT:${2:标签内容}}</wd-tag>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/tag"
+  },
+  "wd-tag plain": {
+    "prefix": "wd-tag plain", 
+    "body": [
+      "<wd-tag plain>${TM_SELECTED_TEXT:${1:标签内容}}</wd-tag>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/tag"
+  },
+  "wd-tag mark": {
+    "prefix": "wd-tag mark", 
+    "body": [
+      "<wd-tag mark>${TM_SELECTED_TEXT:${1:标签内容}}</wd-tag>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/tag"
+  },
+  "wd-tag round": {
+    "prefix": "wd-tag round", 
+    "body": [
+      "<wd-tag round>${TM_SELECTED_TEXT:${1:标签内容}}</wd-tag>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/tag"
+  },
+  "wd-tag icon": {
+    "prefix": "wd-tag icon", 
+    "body": [
+      "<wd-tag icon=\"wd-icon-${1|arrow-thin-up,arrow-thin-down,arrow-right,arrow-down,arrow-up,arrow-left,fill-camera,clock,computer,eye-close,view,translate,download,picture,evaluation,goods,lenovo,list,note,video,warning,setting,camera,chat,delete-thin,add-circle,add,scan,translate-bold,close,search,delete,more,thin-arrow-left,filter,phone,refresh,check,phone-compute,transfer,keywords,star-on,check-bold,error-fill,warn-bold,close-outline,close-bold,check-outline,wifi-error,subscribe,detection,read,fill-arrow-down,dong,edit-outline,copy,bags,decrease,jdm,spool|}\" type=\"${3|info, warning, danger|}\" mark>${TM_SELECTED_TEXT:${2:标签内容}}</wd-tag>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/tag"
+  },
+  "wd-tag color": {
+    "prefix": "wd-tag color", 
+    "body": [
+      "<wd-tag color=\"${1:#0083ff}\" bg-color=\"${2:#d0e8ff}\">${TM_SELECTED_TEXT:${3:标签内容}}</wd-tag>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/tag"
+  },
+  "wd-tag closable": {
+    "prefix": "wd-tag closable", 
+    "body": [
+      "<wd-tag v-if==\"${1:true}\" closable round @close=\"${3}\">${TM_SELECTED_TEXT:${3:标签内容}}</wd-tag>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/tag"
+  },
+  "wd-tag dynamic": {
+    "prefix": "wd-tag dynamic", 
+    "body": [
+      "<wd-tag dynamic round></wd-tag>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/tag"
+  },
+  "wd-tooltip": {
+    "prefix": "wd-tooltip", 
+    "body": [
+      "<wd-tooltip placement=\"${1|top, top-start, top-end, bottom, bottom-start, bottom-end, left, left-start, left-end, right, right-start, right-end|}\" content=\"${2:提示内容}\">",
+      "\t<wd-button>${3:top}</wd-button>",
+      "</wd-tooltip>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/tooltip"
+  },
+  "wd-tooltip show-close": {
+    "prefix": "wd-tooltip show-close", 
+    "body": [
+      "<wd-tooltip content=\"${1:提示内容}\" show-close>",
+      "\t<wd-button>${2:关闭}</wd-button>",
+      "</wd-tooltip>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/tooltip"
+  },
+  "wd-tooltip content": {
+    "prefix": "wd-tooltip content", 
+    "body": [
+      "<wd-tooltip placement=\"${1|top, top-start, top-end, bottom, bottom-start, bottom-end, left, left-start, left-end, right, right-start, right-end|}\">",
+      "\t<div slot=\"content\">",
+      "\t\t<div>${2:多行文本}</div>",
+      "\t</div>",
+      "\t<wd-button>${3:多行文本}</wd-button>",
+      "</wd-tooltip>"
+    ],
+    "description": "https://ftf.jd.com/wot-design/#/components/tooltip"
   }
 }
